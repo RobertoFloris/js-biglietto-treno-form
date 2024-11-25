@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  border-top: 5px solid #c01313;
+  position: relative;
+}
+
+
+.container::before {
+  content: "TrenitaliaDeiPoveri";
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c01313;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #c01313;
+  box-shadow: 0 0 4px rgba(192, 19, 19, 0.4);
+}
+
+button {
+  background-color: #c01313;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a31010;
+}
+
+.none{
+  display: none;
+}
+
+#name-card{
+  margin: 15px;
+}
+
+#km-card,
+#age-card,
+#price-card {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #555;
+  text-align: center;
+  position: relative;
+}
+
+#km-card::before,
+#age-card::before,
+#price-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #c01313;
+  border-radius: 5px 0 0 5px;
+}

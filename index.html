@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Biglietteria</title>
 </head>
 <body>
-  <form action="#">
-    <input type="number" placeholder="Inserisci km" id="km">
-    <input type="number" placeholder="Inserisci la tua età " id="age">
-    <button id="btn">Invia</button>
-  </form>
+  <div class="container">
+    <form action="#">
+      <input type="text" placeholder="Inserisci Nome e Cognome" id="name" required>
+      <input type="number" placeholder="Inserisci km" id="km" required>
+      <input type="number" placeholder="Inserisci la tua età " id="age" required>
+      <button id="btn">Genera</button>
+    </form>
+  </div>
+  
 
-  <div>
-    <span id="km-card">KM</span>
-    <span id="age-card">Eta</span>
+  <div class="card none">
+    <span id="name-card">Nome e Cognome</span>
+    <span id="km-card">Km</span>
+    <span id="age-card">Età</span>
     <span id="price-card">prezzo</span>
   </div>
   
