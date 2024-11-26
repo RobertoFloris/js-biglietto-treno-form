@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) => {
   nameCard.innerText = "Benvenuto a bordo, " + name.value.trim() + "!";
   kmCard.innerText = km.value.trim() + "km";
   ageCard.innerText = age.value.trim() + " anni";
-  carrozCard.innerText = "Carrozza: " + Math.floor(Math.random() * 6) + 1;
+  carrozCard.innerText = "Carrozza: " + Math.floor(Math.random() * 20);
   cpCard.innerText = "CP: 0" + Math.floor(Math.random() * 9999);
 
   
