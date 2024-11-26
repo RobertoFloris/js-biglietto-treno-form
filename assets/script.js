@@ -11,7 +11,7 @@ const nameCard = document.getElementById("name-card")
 const kmCard = document.getElementById("km-card");
 const ageCard = document.getElementById("age-card");
 const priceCard = document.getElementById("price-card");
-const carrozCard = document.getElementById("carroz-card");
+const carriageCard = document.getElementById("carriage-card");
 const cpCard = document.getElementById("cp-card");
 
 
@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) => {
   nameCard.innerText = "Benvenuto a bordo, " + name.value.trim() + "!";
   kmCard.innerText = km.value.trim() + "km";
   ageCard.innerText = age.value.trim() + " anni";
-  carrozCard.innerText = "Carrozza: " + Math.floor(Math.random() * 20);
+  carriageCard.innerText = "Carrozza: " + Math.floor(Math.random() * 20);
   cpCard.innerText = "CP: 0" + Math.floor(Math.random() * 9999);
 
   
